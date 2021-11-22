@@ -1,0 +1,446 @@
+.contact-map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.form-row .form-col {
+    float: left;
+    width: 50%;
+    padding: 0px 15px 0px 0px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.contact-form-subheader {
+    margin-bottom: 20px;
+}
+
+
+.contact-form-subheader {
+    line-height: 41px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+form.wpcf7-form.init p {
+    line-height: 41px;
+    font-size: 22px;
+}
+
+.form-container .check.row {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+body {
+    opacity: 0;
+}
+
+body.doc-loaded {
+    opacity: 1;
+}
+
+.main-header .row {
+    margin-bottom: 0;
+}
+
+.main-site-logo {
+    padding: 25px 0px;
+    transition: 0.3s all ease;
+
+    position: relative;
+}
+
+.main-site-logo img {
+
+width: 115px;
+}
+
+
+body.doc-loaded header.main-header {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    left: 0px;
+    max-width: 100%;
+    background-color: #384f5900;
+    transition: 0.3s all ease;
+    z-index: 999;
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+}
+
+body.doc-loaded header.main-header .main-header__color {
+    background-color: #fff;
+    transition: 0.3s opacity ease;
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    opacity: 0;
+    background-image: url(/wp-content/uploads/2021/10/bark-background-meet-your-adviser-scaled.jpg);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    transition: 0s;
+
+}
+
+body.doc-loaded header.main-header.stick .main-header__color {
+    transition: 0.3s opacity ease;
+opacity: 1;
+}
+
+.main-site-logo img {
+    max-width: 100%;
+}
+body.doc-loaded header.main-header.stick .main-site-logo {
+
+    position: relative;
+}
+body.doc-loaded header.main-header.stick .main-site-logo img{
+    width: 200px;
+        margin: 0px;
+}
+
+body.doc-loaded header.main-header.stick .main-site-logo img {
+
+}
+button.menu.mobile-menu-activate{
+    position: relative;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mobile-menu {
+    background-color: #384F59;
+    background-image: url(/wp-content/uploads/2021/10/bark-background-meet-your-adviser-scaled.jpg);
+    background-blend-mode: multiply;
+    position: fixed;
+    width: 80%;
+    height: 800px;
+    z-index: 1;
+    transition: .5s top ease-in-out;
+    pointer-events: none;
+    z-index: 3;
+    width: 100%;
+    left: 0%;
+    padding-top: 40px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+span.secondary-site-logo {
+    position: absolute;
+    left: 0px;
+    width: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 22px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.2s opacity ease;
+}
+
+body.doc-loaded header.main-header.stick span.secondary-site-logo {
+    opacity: 1;
+}
+
+button.sub-menu-toggle {
+    display: none;
+}
+
+li {
+    position: relative;
+}
+ul.sub-menu {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    white-space: nowrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.sub-menu li {
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+    position: relative;
+    display: block;
+    font-size: 25.5px;
+}
+
+ul.sub-menu li:first-child {
+    padding-left: 0;
+}
+
+.menu-container > ul > li {
+    padding-left: 0px;
+    margin-left: 77px;
+}
+
+.company-logo {
+    position: relative;
+ 
+}
+
+.slick-slide {
+
+    overflow: hidden;
+}
+
+.main-site-logo img {
+    float: left;
+    clear: both;
+}
+
+.main-site-logo img:last-child {
+    margin-top: 10px;
+}
+
+body.doc-loaded header.main-header .main-site-logo img:last-child {
+    transition: 0.3s height ease;
+    overflow: hidden;
+}
+
+body.doc-loaded header.main-header.stick .main-site-logo img:last-child {
+    height: 0px;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+}
+.logo-wrap .logo {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.company-logo > .logo-wrap > * {
+    position: relative;
+    float: left;
+    width: 50%;
+}
+.company-logo {
+    position: relative;
+    padding: 0px 70px 0px 0px;
+}
+
+h4.orange ~ div.text-wrap {
+    border: none;
+}
+
+.text-rotate {
+    display: none;
+}
+
+
+.getting-advice .slick-arrow:before {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.getting-advice .slick-arrow:last-child {
+    left: 100%;
+}
+.getting-advice .slick-arrow {
+    position: absolute;
+    top: 0px;
+    transform: none;
+    z-index: 10;
+    width: 50px;
+    opacity: 0.5;
+    font-size: 30px;
+    height: 523px;
+    opacity: 1;
+    background: #0d3427ab;
+}
+
+.getting-advice .slick-arrow:first-child {
+    left: 0;
+    transform: translateY(0%) translateX(-100%);
+}
+
+.advice-col-container {
+    padding-left: 0;
+    padding: 0px 5px;
+}
+
+.getting-advice .slick-arrow:last-child {
+    left: 100%;
+    transform: translateX(-100%);
+    opacity: 1;
+    background: #0d3427ab;
+}
+
+.parallax-image {
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+
+}
+
+
+button.discover-more > span {
+    display: none;
+}
+
+button.discover-more.button-orange {
+    min-width: 200px;
+}
+
+.timeline-event.left.text-event .day__wrap .day-text:first-child {
+    color: #f9390e;
+}
+
+
+/* Shrink amends */
+.banner {
+    height: 640px;
+}
+
+h4 {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 57px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 31px;
+}
+
+.section {
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
+
+.going-green-bg section.pre-accordion {
+    padding-bottom: 0px;
+}
+
+.going-green-heading {
+    font-size: 112px;
+    line-height: 95px;
+}
+
+.going-green-bg > .section {
+    padding-bottom:115px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.home-images--scale-06 {
+    transform: none;
+}
+
+.why-lester-brunt h2.teal {
+    min-height: 105px;
+}
+
+.why-lester-brunt p {
+    padding-bottom: 25px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.birds-image {
+    width: 300px;
+}
+
+.bike-image {
+    max-width: 350px;
+}
+
+p.terms-conditions {
+    font-size: 12px;
+    line-height: 27pt;
+    margin-bottom: 25px;
+}
+
+.footer-sub-heading {
+    font-size: 20px;
+}
+
+.social-icon {
+    font-size: 36px;
+}
+
+form.wpcf7-form.init p {
+    line-height: 41px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p.footer-tc-links a {
+    font-size: 12px;
+}
+
+.main-site-logo {
+    padding: 10px 0px;
+    transition: 0.3s all ease;
+    position: relative;
+}
+
+.mobile-menu {
+    height: 640px;
+
+}
+
+.menu-container li {
+    font-size: 27px;
+    line-height: 25px;
+}
+
+ul.sub-menu li {
+    font-size: 27px;
+
+}
+
+ul.sub-menu ul.sub-menu li a {
+    font-size: 16px;
+}
+
+ul.sub-menu ul.sub-menu li {
+    margin: 10px 0px;
+}
+
+.menu-container {
+    padding-top: 50px;
+}
+
+.people-col-container {
+    padding-bottom: 0px;
+}
+
+body > section.accordion {
+    margin-bottom: 0px;
+}

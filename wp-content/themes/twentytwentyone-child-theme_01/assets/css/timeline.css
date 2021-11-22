@@ -1,0 +1,140 @@
+.text-rotate {
+    font-size: 65px;
+}
+
+.svc {
+    overflow: hidden!important;
+}
+
+.parallax-image {
+    z-index: -99;
+}
+
+.contact-page {
+    padding-bottom: 5%;
+    padding-top: 200px;
+}
+
+ul#menu-main-menu > ul {
+    display: block!important;
+}
+
+ul#menu-main-menu > ul > li {
+    display: block;
+}
+
+li.hidden-link > a {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.sub-menu ul.sub-menu li:first-child {
+    margin: 0px;
+}
+ul.sub-menu ul.sub-menu li {
+    margin: 30px 0px;
+    
+}
+
+ul.sub-menu ul.sub-menu li a {
+    font-size: 20px;
+}
+
+.menu-container ul li:first-child {
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-bottom: 0;
+    display: inline-block;
+}
+.menu-container > ul > li {
+    padding-left: 0px;
+    margin-left: 310px;
+    padding-bottom: 0;
+    display: inline-block;
+}
+
+ul.sub-menu ul.sub-menu li:first-child {
+    padding: 0px;
+}
+
+ul.sub-menu li {
+    font-size: 30px;
+    margin: 30px 0px 0px 0px;
+}
+
+.main-site-logo a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-site-logo img:first-child {
+    margin-right: 20px;
+}
+
+.getting-advice .slick-arrow {
+
+    background: transparent;
+}
+.getting-advice .slick-arrow:last-child {
+
+    background: transparent;
+}
+
+.centered-content-wrap {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.getting-advice .slick-arrow:first-child {
+    left: 0;
+    transform: none;
+}
+
+.slick-arrow {
+    cursor: pointer;
+}
+
+body.doc-loaded header.main-header.stick .main-site-logo img:last-child {
+    height: auto!important;
+    width: 80px;
+}
+
+body.doc-loaded header.main-header.stick .main-site-logo img:first-child {
+    height: 0px;
+    width: 0px;
+}
+
+body.doc-loaded header.main-header .main-site-logo img:first-child {
+    transition: 0.2s width ease;
+}
+
+.globe-container img {
+    width: 70%;
+    padding-left: 12%;
+    bottom: 80%;
+    position: relative;
+}
+
+ul.sub-menu ul.sub-menu li {
+    margin: 15px 0px;
+}
+
+.timeline__year {
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+    pointer-events: none;
+    margin-bottom: 200px;
+}
+
+.timeline__year:nth-child(1n+2) h1 {
+    top: -200px;
+}
+
+.menu-container li a {
+    color: #fff;
+}
