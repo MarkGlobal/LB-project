@@ -1,4 +1,4 @@
-<section class="how-we-work-bg" style="background: #fff url(/wp-content/uploads/2021/10/bark-vertical3.png);">
+<section class="how-we-work-bg">
     <div class="container how-we-work-section">
         <div class="row">
             <h4 class="orange">how we work</h4>

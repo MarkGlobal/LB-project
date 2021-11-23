@@ -9,10 +9,6 @@ get_header('internal'); ?>
 
 <div class="container">
     <div class="how-to-find-us row">
-        <div class="map col-6">
-            <img class="contact-map" src="<?php echo get_stylesheet_directory_uri(  ). '/assets/images/map.jpg'; ?>" alt="">
-            <!-- <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8722.158612359239!2d-1.9794478495220236!3d50.79795925728895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a4ec43c4112b%3A0xf966f358dd8f7cd7!2sLester%20Brunt%20Wealth%20Management!5e0!3m2!1sen!2suk!4v1634208820992!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe> -->
-        </div>
         <div class="get-in-touch col-6">
             <div class="get-in-touch-inner col-8 offset-2">
                 <h4 class="orange">get in touch</h4>
@@ -25,16 +21,30 @@ get_header('internal'); ?>
                 <p>Monday to Friday, 9am to 5pm.</p>
             </div>
         </div>
+            <div class="map col-6">
+<!--            <img class="contact-map" src="--><?php //echo get_stylesheet_directory_uri(  ). '/assets/images/map.jpg'; ?><!--" alt="">-->
+<!--             <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8722.158612359239!2d-1.9794478495220236!3d50.79795925728895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a4ec43c4112b%3A0xf966f358dd8f7cd7!2sLester%20Brunt%20Wealth%20Management!5e0!3m2!1sen!2suk!4v1634208820992!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe> -->
+                <div class="lets-chat">
+                    <div class="get-in-touch-inner">
+                        <h4 class="white">get in touch</h4>
+                        <h1 class="contact-form-header teal">Conversations with the<br>right people are priceless.</h1>
+                        <h6 class="contact-form-subheader">Arrange a no obligation meeting<br>to start planning your financial future.</h6>
+                        <div class="form-container white"><?php echo do_shortcode('[contact-form-7 id="50" title="Contact form"]'); ?></div>
+                    </div>
+                </div>
+            </div>
+
+
     </div>
 
-    <div class="lets-chat row col-10 offset-1">
-        <div class="get-in-touch-inner col-10 offset-1">
-            <h4 class="white">get in touch</h4>
-            <h1 class="contact-form-header teal">Conversations with the<br>right people are priceless.</h1>
-            <h6 class="contact-form-subheader">Arrange a no obligation meeting<br>to start planning your financial future.</h6>
-            <div class="form-container white"><?php echo do_shortcode('[contact-form-7 id="50" title="Contact form"]'); ?></div>
-        </div>
-    </div>
+<!--    <div class="lets-chat row col-10 offset-1">-->
+<!--        <div class="get-in-touch-inner col-10 offset-1">-->
+<!--            <h4 class="white">get in touch</h4>-->
+<!--            <h1 class="contact-form-header teal">Conversations with the<br>right people are priceless.</h1>-->
+<!--            <h6 class="contact-form-subheader">Arrange a no obligation meeting<br>to start planning your financial future.</h6>-->
+<!--            <div class="form-container white">--><?php //echo do_shortcode('[contact-form-7 id="50" title="Contact form"]'); ?><!--</div>-->
+<!--        </div>-->
+<!--    </div>-->
     </div>
     <div class="container-fluid">
     <div class="row globe-container">
