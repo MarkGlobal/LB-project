@@ -143,6 +143,31 @@ jQuery(document).ready(function(){
           },
        ]
     });
+    jQuery('.logo-carousel-team-member').slick({
+        slidesToShow: 5,
+        arrows: true,
+        nextArrow: '<i class="fas fa-chevron-circle-right"></i>',
+        prevArrow : '<i class="fas fa-chevron-circle-left"></i>',
+        centerMode: false,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        touchThreshold:100,
+        swipeToSlide: true,
+        responsive: [
+            {
+                breakpoint: 2180,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
     jQuery('.text-rotate.active').fadeIn()
 
     var GBCwindowFocused = true;
