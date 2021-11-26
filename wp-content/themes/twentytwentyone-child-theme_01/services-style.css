@@ -2,6 +2,11 @@
     border-bottom: 1px solid #8E7942;
     border-top: 1px solid #8E7942;
 }
+.text-wrap li{
+    font-size: 16px;
+    line-height: 31px;
+    font-family: 'AvenirNext';
+}
 
 section.accordion {
     overflow: hidden;
@@ -75,7 +80,7 @@ section.timeline .text_image_image {
 
 
 section.accordion {
-    background: #52859145;
+    background: #52859112;
     margin-bottom: 70px;
 }
 
@@ -102,7 +107,7 @@ section.accordion .container {
 }
 
 section.pre-accordion {
-    padding-bottom: 70px;
+    position: relative;
 }
 
 section.accordion .text-wrap {
@@ -112,6 +117,7 @@ section.accordion .text-wrap {
 section.accordion h4 {
     margin-top: 40px;
 }
+
 
 .timeline-event > div {
     flex: 50%;

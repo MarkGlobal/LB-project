@@ -79,58 +79,60 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
                 <div class="row">
                 <h4 class="teal text-center">Meet my pod</h4>
                 </div>
-                <?php if( have_rows('pod_members') ):
-                    while ( have_rows('pod_members') ) : the_row();
-                        $teamMemberID = get_sub_field('pod_member')->ID;
-                        $img_url = get_the_post_thumbnail_url($teamMemberID,'full');
-                        $name = get_sub_field('pod_member')->post_title;
-                        $job_title = get_field('job_title', $teamMemberID);
-                        $teamMemberLink = get_post_permalink($teamMemberID);
-                        ?>
-                        <a href="<?php echo $teamMemberLink; ?>" style="text-decoration: none;">
-                        <div class="pod-member" >
-                            <div class="pod-member-image" style="background-image: url('<?php echo  $img_url; ?>')"></div>
-                            <p class="name pod-name"><?php echo $name; ?></p>
-                            <h4 class="pod-role"><?php echo $job_title; ?></h4>
-                        </div>
-                        </a>
-                    <?php endwhile;
-                else :
-                    // no rows found
-                endif;?>
+                <div class="team-container">
+                    <?php if( have_rows('pod_members') ):
+                        while ( have_rows('pod_members') ) : the_row();
+                            $teamMemberID = get_sub_field('pod_member')->ID;
+                            $img_url = get_the_post_thumbnail_url($teamMemberID,'full');
+                            $name = get_sub_field('pod_member')->post_title;
+                            $job_title = get_field('job_title', $teamMemberID);
+                            $teamMemberLink = get_post_permalink($teamMemberID);
+                            ?>
+                            <a href="<?php echo $teamMemberLink; ?>" style="text-decoration: none;">
+                            <div class="pod-member" >
+                                <div class="pod-member-image" style="background-image: url('<?php echo  $img_url; ?>')"></div>
+                                <p class="name pod-name"><?php echo $name; ?></p>
+                                <h4 class="pod-role"><?php echo $job_title; ?></h4>
+                            </div>
+                            </a>
+                        <?php endwhile;
+                    else :
+                        // no rows found
+                    endif;?>
+                </div>
             </div>
         </div>
     </div>
 
 
 </div>
-<div class="accreditations-section">
-    <div style="background-color:#ccdbe080;">
-        <div class="parallax section" >
+
+    <div class="accreditations-section" style="background-color:#ccdbe080;">
+        <div class="parallax ">
             <div class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="row">
+                            <h4 class="teal offset-1">Accreditations</h4>
+                        </div>
+                    </div>
+                </div>
                 <div class="logo-carousel-team-member">
-
+                    <?php if( have_rows('accreditations_') ):
+                        while ( have_rows('accreditations_') ) : the_row();
+                            $logo_url = get_sub_field('logo');
+                            $supportingText = get_sub_field('suporting_text');
+                    ?>
                     <div class="company-logo">
                         <div class="logo-wrap">
-                            <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/fvt.png">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
+                            <img  class="logo" src="<?php echo $logo_url; ?>">
+                            <p><?php echo $supportingText; ?></p>
                         </div>
                     </div>
-                    <div class="company-logo">
-                        <div class="logo-wrap">
-                            <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gbc.png">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                        </div>
-                    </div>
-
-                    <div class="company-logo">
-                        <div class="logo-wrap">
-                            <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/solla.png">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                        </div>
-                    </div>
-
-
+                        <?php endwhile;
+                    else :
+                        // no rows found
+                    endif;?>
 
 
                 </div>
@@ -138,14 +140,25 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
         </div>
     </div>
 
-</div>
+
 
 
 <style>
-    .meet-my-pod{
+    .accreditations-section{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+    }
+    .meet-my-pod-section{
+        margin-bottom: 50px;
+    }
+    .team-container{
 
-
+        display: flex;
         justify-content: center; align-items: center;
+    }
+    .team-container a{
+        flex-basis: 24%;
     }
     .pod-name{
         font-family: AvenirNextMedium;
@@ -160,7 +173,9 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
         margin-bottom: 20px;
     }
     .pod-member{
-        width: 24%;
+        padding-right: 2px;
+        padding-left: 2px;
+        width: 100%;
         min-height: 300px;
         background-size: cover;
         background-position: center;
@@ -219,7 +234,7 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
     }
     .white-team-outer{
         background-color: rgb(255,255,255);
-        width: 500px;
+        width: 550px;
         min-height: 550px;
         position: absolute;
         top: 60px;
@@ -229,7 +244,8 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
         width: 100%;
         min-height: 550px;
         background-color:rgba(82,133,145, 0.05);
-        padding: 75px;
+        padding: 50px;
+
     }
     .scale-social{
         padding-top: 20px;
@@ -268,89 +284,3 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
 
 
 
-
-
-<div class="team-member-banner" style="background-image: url('<?php echo $banner_image; ?>')"></div>
-<div class="container">
-    <div class="profile-container row">
-        <div class="team-member-image" style="background-image: url('<?php echo $featured_img_url; ?>')"></div>
-        <div class="team-member-details" style="">
-            <p class="name"><?php echo $post->post_title; ?></p>
-            <h4 class="job-role"><?php the_field( 'job_title', $post->ID ); ?></h4>
-            <p class="tag-line"><?php the_field( 'tag_line', $post->ID ); ?></p>
-
-            <p class="name">Email:</p>
-            <p class="team-member-info"><?php the_field( 'email', $post->ID ); ?></p>
-            <p class="name">Phone:</p>
-            <p class="team-member-info"><?php echo $phone; ?></p>
-
-        </div>
-    </div>
-    <div class="row bio-row">
-        <div class="bio-content">
-            <h4 class="job-role">about me</h4>
-
-            <div class="signature"><img src="<?php the_field( 'signature', $post->ID ); ?>"></div>
-        </div>
-    </div>
-    <div class="row bio-row history">
-        <div class="bio-content">
-            <h4 class="job-role">History</h4>
-            <div class="row">
-                <p class="col-4">June 2025 - April 2026</p>
-                <p class="col-8">This is a Job Description. Briefly describe your specific position, including details about important achievements and milestones. Make sure to include relevant skills and highlights, and don't forget to adjust the timeframe in the subtitle.</p>
-            </div>
-
-            <div class="row">
-                <p class="col-4">June 2025 - April 2026</p>
-                <p class="col-8">This is a Job Description. Briefly describe your specific position, including details about important achievements and milestones.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-    .team-member-banner{
-        height: 500px;
-        background-size: cover;
-        background-position: center;
-    }
-    .team-member-image{
-        height: 500px;
-        width: 500px;
-        background-size: cover;
-        background-position: center;
-        padding: 0;
-        margin: 0;
-        display: inline-block;
-        transform: translateX(2%);
-    }
-    .profile-container{
-        transform: translateY(-50%);
-        margin: 0 auto;
-        /*background-color: red;*/
-        max-width: 1010px;
-    }
-    .team-member-details{
-        height: 500px;
-        width: 500px;
-        background-color: white;
-        display: inline-block;
-        margin: 0px;
-        padding: 75px;
-    }
-    .team-member-info{
-
-    }
-    .bio-row{
-        position: relative;
-        top: -190px;
-    }
-    .bio-content{
-        max-width: 950px;
-        margin: 0 auto;
-    }
-    .history{
-        padding-top: 50px;
-    }
-</style>

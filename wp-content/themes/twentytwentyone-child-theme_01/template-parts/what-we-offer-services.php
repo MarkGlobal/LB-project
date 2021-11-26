@@ -7,52 +7,28 @@
     </div>
 </div>
 
-
+    <div class="container">
+        <div class="row">
 <?php
 // check if the repeater field has rows of data
 if( have_rows('accordion_section') ):
  	// loop through the rows of data
     while ( have_rows('accordion_section') ) : the_row(); ?>
 
-        <section class="pre-accordion">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+        <section class="pre-accordion col-6">
+                <div class="">
                 <h1 class="intro-header"><?php the_sub_field('title'); ?></h1>
                 <?php the_sub_field('content'); ?>
-                <button class="discover-more button-orange">
-                    <span class="discover-more--main active">Discover More</span>
-                    <span class="discover-more--close">Close</span>
-                </button>
+                <a href="/service-definitions#<?php the_sub_field('title'); ?>" target="_blank">
+                    <button class="discover-more button-orange scaled-button">
+                        Discover More
+    <!--                    <span class="discover-more--main active">Discover More</span>-->
+    <!--                    <span class="discover-more--close">Close</span>-->
+                    </button>
+                </a>
                 </div>
-            </div>
-        </div>
     </section>
-    <section class="accordion">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
 
-    <?php if( have_rows('accordion') ):
-            // loop through the rows of data
-            while ( have_rows('accordion') ) : the_row(); ?>
-
-                <?php if ( get_sub_field('title') ) { echo '<h4 class="orange">' . get_sub_field('title') . '</h4>'; } ?>
-                            <div class="text-wrap">
-                                <?php the_sub_field('content'); ?>
-                            </div>
-      
-
-
-            <?php endwhile;
-            else :
-                // no rows found
-            endif;?>
-                              </div>
-                    </div>
-                </div>
-        <?php get_template_part('template-parts/contact-section', '' ); ?>
-            </section>
 
     <?php endwhile;
 else :
@@ -62,6 +38,8 @@ else :
 endif;
 
 ?>
+        </div>
+    </div>
 
 <script>
 

@@ -45,6 +45,7 @@
 <?php get_template_part('template-parts/services-intro', '' ); ?>
 <?php get_template_part('template-parts/services-how-we-work', '' ); ?>
 <?php get_template_part('template-parts/what-we-offer-services', '' ); ?>
+<?php get_template_part('template-parts/contact-section', '' ); ?>
 <?php get_template_part('template-parts/investing-in-their-future', '' ); ?>
 <?php get_template_part('template-parts/meet-your-adviser', '' ); ?>
 <?php get_template_part('template-parts/our', 'brochure' ); ?>

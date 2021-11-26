@@ -1,13 +1,13 @@
 <div class="going-green-bg">
     <div class="section container">
         <div class="going-green text-center">
-            <h1 class="going-green-heading going-green-opacity center">going green</h1>
+            <h1 class="going-green-heading going-green-opacity center" style="">going green</h1>
             <h2 class="going-green-opacity">Want to make a positive impact with one easy change?</h2>
             <p class="going-green-opacity">We’ve made it easier to view your wealth online.<br>
                 Doing this means we can reduce the amount of paper we post to clients.<br>
                 As a thank you, we donate £5 to our charitable foundation.</p>
             <section class="pre-accordion">
-            <button class="going-green-button">show me how</button>
+            <button class="going-green-button scaled-button">show me how</button>
             </section>
         </div>
 

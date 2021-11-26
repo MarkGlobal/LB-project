@@ -441,13 +441,14 @@ p.service-subheading{
 
 /* going green */
 .going-green-bg {
-    background-color: #384F5960;
+    background-color: #384F5970;
     background-blend-mode: multiply;
-    background-image: url("/wp-content/uploads/2021/10/trees.jpg");
+    background-image: url("/wp-content/uploads/2021/11/goinggreenbackgroundnew.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    /*background-position: center;*/
+    background-position: bottom 50px;
     background-size: cover;
-    /*background-attachment: fixed;*/
+
 }
 
 .going-green-heading{
@@ -465,7 +466,9 @@ p.service-subheading{
     margin-top: 85px;
     background-color: #0d3427 !important;
 }
-
+.going-green-accordion {
+    background-color: #0d342745 !important;
+}
 
 /*people-that-matter */
 .people-that-matter{
@@ -546,7 +549,7 @@ p.service-subheading{
 .advisers-button{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: scale(0.8) translateX(-62%);
     top: 64%;
     border: none;
     transition: 1.5s;
@@ -737,7 +740,12 @@ input.wpcf7-submit {
     font-size: 16px;
     font-family: AvenirNextMedium, sans-serif;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+    transform: scale(0.8) translateX(-12px);
+}
+.contact-section input[type=text], .contact-section input[type=tel]{
+    width:100%;
+    height: 40px;
 }
 
 /*Building relationships section*/
@@ -926,10 +934,10 @@ input.wpcf7-submit {
 }
 .intro-illustration{
     position: absolute;
-    width:424px;
-    height:480px;
-    top:-34px;
-    left: 804px;
+    width: 424px;
+    height: 480px;
+    top: 15px;
+    left: 848px;
 }
 .paragraph-demibold{
     font-family: AvenirNextDemiBold;
@@ -978,19 +986,21 @@ input.wpcf7-submit {
 
 
 .contact-section{
-    background-color: #528591;
+    /*background-color: #52859180;*/
     background-image: url('/wp-content/uploads/2021/10/bark-background-meet-your-adviser-scaled.jpg');
+    background-color: rgba(82,133,145, 0.15);
     background-blend-mode: multiply;
-    padding-top: 10px;
-    height: 933px;
+    padding-top: 70px;
 }
 
 .contact-section input{
     border: none;
 }
 .contact-label{
-    color: white;
     padding-bottom: 10px;
+}
+.contact-label:nth-child(2){
+    padding-left: 100px;
 }
 
 .contact-paragraph{
@@ -1006,7 +1016,17 @@ input.wpcf7-submit {
     color: #f9390e !important;
     transition: 1s;
 }
-
+.contact-section textarea{
+    border: none;
+    padding: 10px;
+    resize: none;
+}
+textarea:focus, input:focus{
+    outline: none !important;
+}
+.contact-section .row:nth-child(4) {
+    margin-bottom: 0;
+}
 
     /*how we work*/
 .how-we-work-section{

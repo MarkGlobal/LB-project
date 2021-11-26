@@ -6,7 +6,7 @@
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 ?>
 <?php get_header('internal'); ?>
-<div style="height: 300px;"></div>
+<div style="height: 200px;"></div>
 
 <div class="container">
     <div class="row">
@@ -29,7 +29,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
             foreach( $posts as $post) : setup_postdata($post);
             ?>
             <div class="col-4 team">
-                <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )[0]; ?>">
+                <img class="team-img" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )[0]; ?>">
                 <p class="name"><?php echo $post->post_title; ?></p>
                 <h4 class="job-role"><?php the_field( 'job_title', $post->ID ); ?></h4>
                 <p class="tag-line"><?php the_field( 'tag_line', $post->ID ); ?></p>
@@ -44,6 +44,12 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
         <div class="col-4 team"></div>
 
         <style>
+            .team-img{
+                width: 415px;
+                height: 443px;
+                object-fit: cover;
+                object-position: top;
+            }
             .name{
                 font-family: AvenirNextMedium;
                 color: #486C78;

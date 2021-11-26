@@ -4,7 +4,7 @@
         <div class="advisers">
             <img class="col-12" src="/wp-content/uploads/2021/10/meet-advisers-headshots.jpg">
             <h3 class="advisers-heading">Meet your adviser</h3>
-            <a href="/our-team"><button class="advisers-button button-orange">Locate an adviser near you</button></a>
+            <a href="/our-team" class=""><button class="advisers-button button-orange">Locate an adviser near you</button></a>
         </div>
         <h2 class="adviser-subheading">
             We have 17 specialist advisers<br>

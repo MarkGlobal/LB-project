@@ -176,7 +176,7 @@ function get_custom_posts($post_type){
             <p class="cello"><?php the_field( 'excerpt', $post->ID ); ?></p>
         </div>
         <a href="<?php echo get_post_permalink($post->ID); ?>" target="_blank">
-            <button class="button-orange news-event-button">Read More</button>
+            <button class="button-orange news-event-button scaled-button">Read More</button>
         </a>
 
 
@@ -203,7 +203,7 @@ function get_current_events($post_type){
             <p class="cello"><?php the_field( 'excerpt', $post->ID ); ?></p>
         </div>
         <a href="<?php echo get_post_permalink($post->ID); ?>" target="_blank">
-            <button class="button-orange news-event-button">Read More</button>
+            <button class="button-orange news-event-button scaled-button">Read More</button>
         </a>
 
 
@@ -231,7 +231,7 @@ function get_notable_past_events($post_type){
             <p class="cello"><?php the_field( 'excerpt', $post->ID ); ?></p>
         </div>
         <a href="<?php echo get_post_permalink($post->ID); ?>" target="_blank">
-            <button class="button-orange news-event-button">Read More</button>
+            <button class="button-orange news-event-button scaled-button">Read More</button>
         </a>
     </div>
 
@@ -258,7 +258,7 @@ function get_more_notable_past_events(){
                 <p class="cello"><?php the_field( 'excerpt', $post->ID ); ?></p>
             </div>
             <a href="<?php echo get_post_permalink($post->ID); ?>" target="_blank">
-                <button class="button-orange news-event-button">Read More</button>
+                <button class="button-orange news-event-button scaled-button">Read More</button>
             </a>
         </div>
 
