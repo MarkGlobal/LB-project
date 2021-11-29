@@ -3,55 +3,21 @@
         <div class="">
             <div class="logo-carousel">
 
-            <div class="company-logo">
-                <div class="logo-wrap">
-                    <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/fvt.png">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                </div>
-            </div>
-
-                <div class="company-logo">
-                    <div class="logo-wrap">
-                        <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gbc.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                    </div>
-                </div>
-
-                <div class="company-logo">
-                    <div class="logo-wrap">
-                        <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/solla.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                    </div>
-                </div>
-
-                <div class="company-logo">
-                    <div class="logo-wrap">
-                        <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/afe.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                    </div>
-                </div>
-
-                <div class="company-logo">
-                    <div class="logo-wrap">
-                        <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/st-james.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                    </div>
-                </div>
-
-                <div class="company-logo">
-                    <div class="logo-wrap">
-                        <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/financial-planners.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                    </div>
-                </div>
-
-                <div class="company-logo">
-                    <div class="logo-wrap">
-                        <img  class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/fca.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ex nobis, sit unde officia blanditiis natus, ipsum vel aliquam error molestiae vero cupiditate mollitia? Non omnis aliquid in soluta assumenda.</p>
-                    </div>
-                </div>
-
+                <?php if( have_rows('logos') ):
+                    while ( have_rows('logos') ) : the_row();
+                        $logo_url = get_sub_field('logo_image');
+                        $supportingText = get_sub_field('logo_text');
+                        ?>
+                        <div class="company-logo">
+                            <div class="logo-wrap">
+                                <img  class="logo" src="<?php echo $logo_url; ?>">
+                                <p><?php echo $supportingText; ?></p>
+                            </div>
+                        </div>
+                    <?php endwhile;
+                else :
+                    // no rows found
+                endif;?>
             </div>
         </div>
     </div>
