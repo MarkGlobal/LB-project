@@ -51,60 +51,6 @@
            <?php endwhile; ?>
         <?php endif; ?>
 
-<!--        <div class="row-of-services">-->
-<!--            <div class="service-card card-one">-->
-<!--                <div class="services-icon-container">-->
-<!---->
-<!--                    <img class="services-card-image" src="/wp-content/uploads/2021/11/Image-12.png">-->
-<!--                </div>-->
-<!--                <h4 class="services-card-title">investments & growth</h4>-->
-<!--                <p class="services-card-sub">Helping you on<br>your journey.</p>-->
-<!--                <a href="/investment-growth/"><button class="button-orange scaled-button service-card-button">Discover more</button></a>-->
-<!--            </div>-->
-<!--            <div class="service-card">-->
-<!--                <div class="services-icon-container">-->
-<!--                    <img class="services-card-image" src="/wp-content/uploads/2021/11/Image-18.png">-->
-<!--                </div>-->
-<!--                <h4 class="services-card-title">retirement planning</h4>-->
-<!--                <p class="services-card-sub">A financial plan<br>that works for all.</p>-->
-<!--                <a href="/retirement/"><button class="button-orange scaled-button service-card-button">Discover more</button></a>-->
-<!--            </div>-->
-<!--            <div class="service-card card-three">-->
-<!--                <div class="services-icon-container">-->
-<!--                    <img class="services-card-image" src="/wp-content/uploads/2021/11/Image-19.png">-->
-<!--                </div>-->
-<!--                <h4 class="services-card-title">Corporate services</h4>-->
-<!--                <p class="services-card-sub">Supporting you<br>and your business.</p>-->
-<!--                <a href="/corporate-services/"><button class="button-orange scaled-button service-card-button">Discover more</button></a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--            <div class="row-of-services">-->
-<!--                <div class="service-card card-one">-->
-<!--                    <div class="services-icon-container">-->
-<!--                        <img class="services-card-image" src="/wp-content/uploads/2021/11/Image-20.png">-->
-<!--                    </div>-->
-<!--                    <h4 class="services-card-title">protection planning</h4>-->
-<!--                    <p class="services-card-sub">Protecting what's<br>important to you.</p>-->
-<!--                    <a href="/protection-planning/"><button class="button-orange scaled-button service-card-button">Discover more</button></a>-->
-<!--                </div>-->
-<!--                <div class="service-card">-->
-<!--                    <div class="services-icon-container">-->
-<!--                        <img class="services-card-image" src="/wp-content/uploads/2021/11/Image-21.png">-->
-<!--                    </div>-->
-<!--                    <h4 class="services-card-title">intergenerational wealth managent</h4>-->
-<!--                    <p class="services-card-sub">Building a plan<br>that works for all</p>-->
-<!--                    <a href="/intergenerational-wealth-management/"><button class="button-orange scaled-button service-card-button">Discover more</button></a>-->
-<!--                </div>-->
-<!--                <div class="service-card card-three">-->
-<!--                    <div class="services-icon-container">-->
-<!--                        <img class="services-card-image" src="/wp-content/uploads/2021/11/Image-22.png">-->
-<!--                    </div>-->
-<!--                    <h4 class="services-card-title">Additional services</h4>-->
-<!--                    <p class="services-card-sub">Catering for<br>all your needs</p>-->
-<!--                    <a href="/additional-services/"><button class="button-orange scaled-button service-card-button">Discover more</button></a>-->
-<!--                </div>-->
-<!--            </div>-->
-
     </div>
 </div>
 
