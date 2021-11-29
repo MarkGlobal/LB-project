@@ -1330,3 +1330,16 @@ textarea:focus, input:focus{
 a:hover{
     color: unset;
 }
+
+.no-scroll {
+    overflow: auto !important;
+}
+
+.lb-logo-top{
+    width: 45px !important;
+}
+.lb-logo-bottom{
+    width: 180px !important;
+    position: absolute;
+    top: 57px;
+}

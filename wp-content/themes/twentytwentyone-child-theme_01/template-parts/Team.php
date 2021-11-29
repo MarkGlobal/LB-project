@@ -6,7 +6,7 @@
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 ?>
 <?php get_header('internal'); ?>
-<div style="height: 200px;"></div>
+<div class="meet-team-banner-section" style="background-image: url('<?php echo $featured_img_url?>')"></div>
 
 <div class="container">
     <div class="row">
@@ -22,7 +22,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 <!--            <button class="button-orange team-view-more">More about me</button>-->
 <!--        </div>-->
         
-            <h1 class="teal" style="text-align: center; padding-bottom: 70px;">Meet our team</h1>
+            <h1 class="teal" style="text-align: center; padding-top: 70px; padding-bottom: 70px;">Meet our team</h1>
             <?php
             $args = array( 'post_type' => "team members", 'orderby' => 'menu_order post_title');
             $posts = get_posts($args);
@@ -34,7 +34,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
                 <h4 class="job-role"><?php the_field( 'job_title', $post->ID ); ?></h4>
                 <p class="tag-line"><?php the_field( 'tag_line', $post->ID ); ?></p>
                 <p class="bio-excerpt"><?php the_field( 'bio', $post->ID ); ?></p>
-                <div class="signature"><img src="<?php the_field( 'signature', $post->ID ); ?>"></div>
+                <div class="signature hide"><img src="<?php the_field( 'signature', $post->ID ); ?>"></div>
                 <a href="<?php echo get_post_permalink($post->ID); ?>" target="_blank"><button class="button-orange team-view-more">More about me</button></a>
             </div>
              <?php
@@ -44,6 +44,11 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
         <div class="col-4 team"></div>
 
         <style>
+            .meet-team-banner-section{
+                height: 840px;
+                background-size: cover;
+                background-position: bottom;
+            }
             .team-img{
                 width: 415px;
                 height: 443px;
@@ -72,7 +77,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
             }
             .team-view-more{
                 transform: scale(0.8) translateX(-12%) !important;
-                margin-top: 10px;
+                margin-top: 20px;
                 margin-bottom: 60px;
             }
             .team-view-more:hover{

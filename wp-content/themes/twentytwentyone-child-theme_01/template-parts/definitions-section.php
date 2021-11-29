@@ -2,7 +2,7 @@
     <div class="container sub-section__title">
         <div class="row">
             <div class="col-12">
-                <h4 class="orange">What we offer</h4>
+                <h4 class="orange">What we offer.</h4>
             </div>
         </div>
     </div>

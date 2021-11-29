@@ -36,7 +36,7 @@ section.timeline {
     font-size: 385px;
     position: relative;
     line-height: unset;
-    color: #e6e7e9;
+    color: #e6e7e970;
     font-weight: bold;
     letter-spacing: 1.5rem;
     height: 0px;
@@ -152,7 +152,7 @@ margin-right: 40px;
 }
 
 .timeline-event h4 {
-font-size: 70px;
+    font-size: 30px;
     letter-spacing: 0.05rem;
 }
 
@@ -163,18 +163,21 @@ font-size: 70px;
 
 }
 
+.timeline-space{
+    height: 125px;
+}
+
 .timeline-event p {
     position: relative;
-    font-size: 42px;
+    font-size: 20px;
     margin-top: 25px;
     font-weight: bold;
-    line-height: 60px;
+    line-height: 35px;
     letter-spacing: -0.04rem;
     color: #4f95aa;
 }
 
 .timeline-event.left .year__info  p {
-
     text-align: left;
     padding-left: 5px;
 

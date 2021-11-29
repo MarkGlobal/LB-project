@@ -6,8 +6,10 @@
  * 
 */
 
-get_header();
-
+get_header('internal');
+$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+echo '<div class="timeline-banner-section" style="background-image: url('.$featured_img_url.')"></div>';
+echo '<div class="timeline-space"></div>';
 echo '<section class="timeline">';
 echo '<div class="timeline-line"></div>';
 
@@ -146,3 +148,10 @@ endif;
 echo '</section>';
 
 get_footer();
+?>
+<style>
+    .timeline-banner-section{
+    height: 640px;
+        background-size: cover;
+    }
+</style>

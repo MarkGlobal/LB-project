@@ -40,7 +40,8 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 
 <style>
     .news-banner-section{
-        height: 640px;
+        height: 840px;
         background-size: cover;
+        background-position: bottom;
     }
 </style>

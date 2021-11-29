@@ -14,11 +14,17 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
                         <p class="name"><?php echo $post->post_title; ?></p>
                         <h4 class="job-role"><?php the_field( 'job_title', $post->ID ); ?></h4>
                         <p class=""><?php the_field( 'bio', $post->ID ); ?></p>
-                        <div class="signature"><img src="<?php the_field( 'signature', $post->ID ); ?>"></div>
+                        <div class="signature hide"><img src="<?php the_field( 'signature', $post->ID ); ?>"></div>
                         <div class="row scale-social">
-                        <div class="col-2"><i class="social-icon fab fa-instagram"></i></div>
-                        <div class="col-2"><i class="social-icon fab fa-facebook"></i></div>
-                        <div class="col-2"><i class="social-icon fab fa-linkedin-in"></i></div>
+                            <?php if (get_field('instagram', $post->ID)) : ?>
+                        <div class="col-2"><a href="<?php the_field( 'instagram', $post->ID ); ?>"><i class="social-icon fab fa-instagram"></i></a></div>
+                            <?php endif; ?>
+                            <?php if (get_field('facebook', $post->ID)) : ?>
+                        <div class="col-2"><a href="<?php the_field( 'facebook', $post->ID ); ?>"><i class="social-icon fab fa-facebook"></i></a></div>
+                            <?php endif; ?>
+                            <?php if (get_field('linked_in', $post->ID)) : ?>
+                        <div class="col-2"><a href="<?php the_field( 'linked_in', $post->ID ); ?>"><i class="social-icon fab fa-linkedin-in"></i></a></div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -41,7 +47,7 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
                 </div>
                 <div class="width-half team-member-quote">
                     <h2 class="teal">"<?php the_field( 'personal_quote', $post->ID ); ?>"</h2>
-                    <p class="name quote-name"><?php echo $post->post_title; ?></p>
+                    <p class="name quote-name white"><?php echo $post->post_title; ?></p>
                 </div>
             </div>
         </div>
@@ -191,6 +197,7 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
     }
     .quote-name{
         padding-top: 13px;
+        color: white;
     }
     .width-half{
         width:48%;
@@ -201,6 +208,7 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
 
     .team-member-quote h2{
         margin-bottom: 0px;
+        color: white;
     }
     .team-member-quote{
         padding: 50px;
@@ -215,7 +223,8 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
 
     }
     .quote-image-container{
-        background-color:rgba(82,133,145, 0.05);
+        /*background-color:rgba(82,133,145, 0.05);*/
+        background-color:  #f8390e;
         padding-left: 0px;
         transform: scale(calc(var(--bs-gutter-x) * .5));
 
@@ -248,7 +257,7 @@ $phone = (( get_field( 'phone', get_the_ID()) ) ? get_field( 'phone', get_the_ID
 
     }
     .scale-social{
-        padding-top: 20px;
+        padding-top: 30px;
         transform: scale(0.8) translateX(-12%);
     }
     .further-info-container{
