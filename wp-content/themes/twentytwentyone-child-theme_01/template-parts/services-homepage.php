@@ -44,7 +44,7 @@
                 </div>
                 <h4 class="services-card-title"><?php echo get_sub_field('title_') ?></h4>
                 <p class="services-card-sub"><?php echo get_sub_field('subheader') ?></p>
-                <a href="<?php echo get_sub_field('service_page') ?>"><button class="button-orange scaled-button service-card-button">Discover more</button></a>
+                <a href="<?php echo get_sub_field('service_page') ?>"><button class="button-orange scaled-button service-card-button orange-transition-color-bg">Discover more</button></a>
             </div>
                 <?php $Row = ($right) ? '</div>' : '';  echo $Row ?>
 
@@ -73,6 +73,9 @@
     .services-card-image{
         float: left;
         vertical-align: middle;
+        height: 100px;
+        padding-bottom: 11px;
+        padding-left: 11px;
     }
 
     .services-card-title{

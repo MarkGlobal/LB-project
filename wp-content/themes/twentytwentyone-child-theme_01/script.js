@@ -16,6 +16,21 @@
             });
         });
 
+        setTimeout(function(){
+            $G(".main-heading").fadeIn(parseInt(gbc_animation_timing.fade_time));
+        }, parseInt(gbc_animation_timing.heading))
+
+        setTimeout(function(){
+            $G(".secondary-heading").fadeIn(parseInt(gbc_animation_timing.fade_time));
+        }, parseInt(gbc_animation_timing.subheading))
+
+        setTimeout(function(){
+            $G(".main-excerpt").fadeIn(parseInt(gbc_animation_timing.fade_time));
+        }, parseInt(gbc_animation_timing.excerpt))
+
+        setTimeout(function(){
+            $G(".secondary-excerpt").fadeIn(parseInt(gbc_animation_timing.fade_time));
+        }, parseInt(gbc_animation_timing.sub_excerpt))
 
 
 
@@ -83,12 +98,25 @@
             .setTween(".people-that-matter #parallax3", {y: "50%"})
             .addTo(controller);
 
-            new ScrollMagic.Scene({triggerElement: ".meet-your-adviser", offset: $G(window).height() / 2})
-            .setTween(".meet-your-adviser #parallax4", {y: "50%"})
-            .addTo(controller);
+            new ScrollMagic.Scene({triggerElement: ".meet-your-adviser", offset: $G(window).height() / 4})
+            .setTween(".meet-your-adviser #parallax4", {y: "20%"})
+            .addTo(controller)
+            .duration(100);
         }
 
+        var goingGreen = new ScrollMagic.Scene({triggerElement: "#going-green", offset:  $G('#going-green').height() / 2, reverse: false})
+        .setTween(".going-green__content .going-green h1", {left: "50%"})
+        .addTo(controller);
 
+        goingGreen.duration($G(window).height() / 2)
+
+        var timeLine = new ScrollMagic.Scene({triggerElement: "section.timeline", reverse: false, offset: $G(window).height() / 2})
+        .setTween(".timeline-line", {height: "100%"})
+        .addTo(controller);
+
+
+        timeLine.duration( ($G('.timeline-height').outerHeight()) + ($G(window).outerHeight() / 2) );
+        console.log(jQuery('.timeline').outerHeight())
 
 
         if ($G('.svc').length !== 0) {
@@ -101,11 +129,33 @@
 
     });
 
-    console.log('ready')
 
 })(jQuery);
 
 jQuery(document).ready(function(){
+
+
+    var elsToAppend = jQuery('.tag-line');
+    console.log(jQuery(elsToAppend).text().trim());
+
+
+    // for (let index = 0; index < elsToAppend.length; index++) {
+    //     var elToAppend = elsToAppend[index];
+    //
+    //
+    //     if ( jQuery(elToAppend).text()[jQuery(elToAppend).text().length -1] !== '.' && jQuery(elToAppend).text()[jQuery(elToAppend).text().length -2] !== '.') {
+    //          elToAppend.innerHTML = jQuery(elToAppend).text().trim() + '.';
+    //     }
+    // }
+
+    // Header Title elements
+    var headerEls = [".main-heading", ".secondary-heading", ".main-excerpt", ".secondary-excerpt"]
+    for (let index = 0; index < headerEls.length; index++) {
+        jQuery(headerEls[index]).fadeOut();
+    }
+
+
+
     jQuery('.example-carousel').slick({
         slidesToShow: 5,
         arrows: true,
@@ -125,8 +175,9 @@ jQuery(document).ready(function(){
        prevArrow : '<i class="fas fa-chevron-circle-left"></i>',
        centerMode: false,
        autoplay: true,
-       autoplaySpeed: 6000,
+       autoplaySpeed: 2000,
        touchThreshold:100,
+        pauseOnHover:true,
        swipeToSlide: true,
        responsive: [
         {
@@ -144,7 +195,7 @@ jQuery(document).ready(function(){
        ]
     });
     jQuery('.logo-carousel-team-member').slick({
-        slidesToShow: 5,
+        slidesToShow: 2,
         arrows: true,
         nextArrow: '<i class="fas fa-chevron-circle-right"></i>',
         prevArrow : '<i class="fas fa-chevron-circle-left"></i>',
@@ -163,7 +214,7 @@ jQuery(document).ready(function(){
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
             },
         ]

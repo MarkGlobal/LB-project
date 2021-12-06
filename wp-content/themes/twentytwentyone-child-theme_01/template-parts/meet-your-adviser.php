@@ -2,7 +2,9 @@
     <div class="parallax-image parallax-offset--lg" id="parallax4"></div>
     <div class="section container text-center">
         <div class="advisers">
-            <img class="col-12" src="/wp-content/uploads/2021/10/meet-advisers-headshots.jpg">
+<!--            <img class="col-12" src="/wp-content/uploads/2021/10/meet-advisers-headshots.jpg">-->
+            <img class="col-12 adviser-image" src="/wp-content/uploads/2021/11/advisers1.jpg">
+
             <h3 class="advisers-heading">Meet your adviser</h3>
             <a href="/our-team" class=""><button class="advisers-button button-orange">Locate an adviser near you</button></a>
         </div>
@@ -17,3 +19,11 @@
         <img class="business-image" src="/wp-content/uploads/2021/10/business-svg.svg">
     </div>
 </div>
+
+<style>
+    .adviser-image{
+        height: 700px;
+        object-fit: cover;
+        /*object-position: 0px -97px;*/
+    }
+</style>

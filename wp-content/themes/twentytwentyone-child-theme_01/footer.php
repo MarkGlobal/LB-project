@@ -19,13 +19,13 @@
 
     </div>
 
-    <div class="row">
-        <h4 class="footer-heading offset-1 col-12">Keep in touch</h4>
+    <div class="row kit">
+        <h4 class="footer-heading orange offset-1 col-12">Keep in touch</h4>
         <h5 class="footer-sub-heading offset-1 col-5">Keep up-to-date with our latest news</h5>
-            <div class="col-1 justify-content-center"><i class="social-icon fab fa-facebook" style="horiz-align: center"></i></div>
-            <div class="col-1"><i class="social-icon fab fa-linkedin-in"></i></div>
-            <div class="col-1"><i class="social-icon fab fa-instagram"></i></div>
-            <div class="col-1"><i class="social-icon fab fa-twitter"></i></div>
+            <div class="col-1 justify-content-center"><a href="<?php the_field('facebook', 'option'); ?>"><i class="social-icon fab fa-facebook" style="horiz-align: center"></i></a></div>
+            <div class="col-1"><a href="<?php the_field('linked_in', 'option'); ?>"><i class="social-icon fab fa-linkedin-in"></i></a></div>
+            <div class="col-1"><a href="<?php the_field('instagram', 'option'); ?>"><i class="social-icon fab fa-instagram"></i></a></div>
+            <div class="col-1"><a href="<?php the_field('twitter', 'option'); ?>"><i class="social-icon fab fa-twitter"></i></a></div>
     </div>
 
     <div class="row">
@@ -42,10 +42,9 @@
 
     <div class="row no-gutters">
         <p class="footer-tc-links offset-1 col-12">
-        <a>Privacy policy |</a>
-        <a>Site Disclaimer |</a>
-        <a>T&Cs |</a>
-        <a>Acessibility</a>
+        <a>   Privacy policy    </a>
+        <a>   Site Disclaimer    </a>
+        <a>   T&Cs   </a>
         </p>
     </div>
 
@@ -56,3 +55,9 @@
 
 </body>
 </html>
+
+<style>
+    .kit a > .social-icon{
+        color: white;
+    }
+</style>

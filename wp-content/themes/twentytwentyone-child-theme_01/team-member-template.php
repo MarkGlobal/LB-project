@@ -1,11 +1,10 @@
 <?php
 /*
 Template Name: Team Member
-Template Post Type: Team Members
+Template Post Type: Team Old
 */
 ?>
 
-<h2>hello</h2>
 
 
 <?php

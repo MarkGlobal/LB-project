@@ -18,4 +18,5 @@ get_header('internal');
         height: 640px;
         background-size: cover;
     }
+
 </style>

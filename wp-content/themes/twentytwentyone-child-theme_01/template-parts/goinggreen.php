@@ -1,22 +1,45 @@
-<div class="going-green-bg">
-    <div class="section container">
-        <div class="going-green text-center">
-            <h1 class="going-green-heading going-green-opacity center" style="">going green</h1>
-            <h2 class="going-green-opacity">Want to make a positive impact with one easy change?</h2>
-            <p class="going-green-opacity">We’ve made it easier to view your wealth online.<br>
-                Doing this means we can reduce the amount of paper we post to clients.<br>
-                As a thank you, we donate £5 to our charitable foundation.</p>
-            <section class="pre-accordion">
-            <button class="going-green-button scaled-button">show me how</button>
-            </section>
+<div class="going-green-bg" id="going-green">
+    <div class="going-green__bg" style="background-image: url(/wp-content/uploads/2021/11/goinggreenbackgroundnew.jpg);"></div>
+    <div class="going-green__content">
+        <div class="section container-fluid">
+            <div class="going-green">
+                <div class="going-green-content__wrapper">
+
+
+                    <h1 class="going-green-heading going-green-opacity center" style="left: 50%;">going green</h1>
+                    <h2 class="going-green-opacity">Want to make a positive impact with one easy change?</h2>
+                    <p class="going-green-opacity"></p>
+                    <section class="pre-accordion">
+                        <button class="going-green-button scaled-button green-button-transition">show me how</button>
+                    </section>
+                </div>
+            </div>
         </div>
-
-
-
     </div>
+    <div class="going-green__foreground"></div>
+
+
 
 
 </div>
+<!--<div class="going-green-bg">-->
+<!--    <div class="section container">-->
+<!--        <div class="going-green">-->
+<!--            <div class="going-green-content__wrapper">-->
+<!--                <h1 class="going-green-heading going-green-opacity center" style="">going green</h1>-->
+<!--                <h2 class="going-green-opacity">Want to make a positive impact with one easy change?</h2>-->
+<!--                <p class="going-green-opacity">We’ve made it easier to view your wealth online.<br>-->
+<!--                    Doing this means we can reduce the amount of paper we post to clients.<br>-->
+<!--                    As a thank you, we donate £5 to our charitable foundation.</p>-->
+<!--                <section class="pre-accordion">-->
+<!--                <button class="going-green-button scaled-button">show me how</button>-->
+<!--                </section>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+<!---->
+<!--</div>-->
 <section class="going-green-accordion accordion">
     <div class="container">
         <p class="">In an age where the online world is at our fingertips, why shouldn’t your wealth management be there as well? Our Online Services allow you to access all your wealth investments in one smart place. Whether you’re already registered, or just about to, here are some great features that can help you get the most from your online account. </p>

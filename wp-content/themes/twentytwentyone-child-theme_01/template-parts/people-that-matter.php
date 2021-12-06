@@ -11,7 +11,7 @@
                     we can ever meet, click here to find
                     out what your LB journey
                     could look like.</p>
-                <button class="button-orange">discover more</button>
+                <button class="button-orange">about us</button>
             </div>
             <div class="col-4 people-col-container">
                 <div class="people-column" style="background-image: url('/wp-content/uploads/2021/10/clients.jpg');">
@@ -31,7 +31,7 @@
                     Our local community is no different,
                     see the work we do in our
                     local communities.</p>
-                <button class="button-orange">join us</button>
+                <button class="button-orange">our Journey</button>
             </div>
         </div>
     </div>

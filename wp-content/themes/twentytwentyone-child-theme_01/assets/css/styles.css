@@ -10,6 +10,14 @@
     padding: 0px 15px 0px 0px;
 }
 
+.lorem {
+
+}
+
+.ipsum {
+
+}
+
 .form-row {
     margin-bottom: 20px;
 }
@@ -31,6 +39,7 @@ form.wpcf7-form.init p {
     line-height: 41px;
     font-size: 22px;
 }
+
 
 .form-container .check.row {
     margin-top: 0px;
@@ -353,6 +362,13 @@ p {
 
 .img-container {
     position: relative;
+}
+.logo-wrap > p{
+    opacity: 0.5;
+}
+
+.img-cont-one{
+    transform: translateY(-74px) translateX(38px);
 }
 
 .home-images--scale-06 {

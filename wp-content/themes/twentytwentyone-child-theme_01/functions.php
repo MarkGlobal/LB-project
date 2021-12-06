@@ -56,7 +56,16 @@ function orbisius_ct_twentytwentyone_child_theme_01_child_theme_enqueue_styles()
 
      ) );
 
-    
+     wp_localize_script( 'gbc_main_script', 'gbc_animation_timing',
+     array(
+             'heading'      => get_field('heading_delay', 'option'),
+             'subheading'   => get_field('subheading_delay', 'option'),
+             'excerpt'      => get_field('excerpt_delay', 'option'),
+             'sub_excerpt'  => get_field('secondary_excerpt_delay', 'option'),
+             'fade_time'    => get_field('fade_in_time', 'option'),
+
+  ) );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'orbisius_ct_twentytwentyone_child_theme_01_child_theme_enqueue_styles' );
@@ -156,6 +165,17 @@ function create_posttype() {
     );
 }
 add_action( 'init', 'create_posttype' );
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title' 	=> 'Lester Brunt Options',
+        'menu_title'	=> 'Lester Brunt Options',
+        'menu_slug' 	=> 'option-settings',
+        'capability'	=> 'edit_posts',
+        'redirect'		=> false
+    ));
+}
 
 
 function get_custom_posts($post_type){

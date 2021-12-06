@@ -3,7 +3,7 @@
         <div class="row">
             <h4 class="orange">how we work</h4>
             <h1 class="cyprus"><?php the_field('heading'); ?></h1>
-            <p class="gold col-6 gold-para" style="font-family:AvenirNextMedium;"><?php the_field('gold_paragraph'); ?></p>
+            <h5 class="gold col-6 gold-para" style="font-family:AvenirNextMedium;"><?php the_field('gold_paragraph'); ?></h5>
             <p class="how-we-work-para"><?php the_field('normal_paragraph'); ?></p>
 
             <div class="row <?php if(!get_the_id()==95){echo "hide";} ?>">

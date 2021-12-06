@@ -7,12 +7,23 @@
 */
 
 get_header('internal');
-$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
-echo '<div class="timeline-banner-section" style="background-image: url('.$featured_img_url.')"></div>';
-echo '<div class="timeline-space"></div>';
-echo '<section class="timeline">';
-echo '<div class="timeline-line"></div>';
+$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
+<div class="timeline-banner-section" style="background-image: url('<?php echo $featured_img_url ?>')">
+    <div class="container">
+        <div class="row">
+            <div class="title-container">
+                <h4 class="orange main-heading">Lester Brunt Timeline</h4>
+                <h1 class="timeline-title teal secondary-heading"><?php the_title() ?></h1>
+            </div>
+        </div>
+    </div>
 
+</div>
+<div class="timeline-space"></div>
+<section class="timeline">
+<div class="timeline-line"></div>
+
+    <?php
 // check if the repeater field has rows of data
 if( have_rows('timeline_content') ):
 
@@ -150,8 +161,15 @@ echo '</section>';
 get_footer();
 ?>
 <style>
+    .title-container{
+        padding-top: 228px;
+    }
     .timeline-banner-section{
-    height: 640px;
+        height: 640px;
         background-size: cover;
+        position: relative;
+    }
+    .timeline-title{
+
     }
 </style>
